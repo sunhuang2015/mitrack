@@ -19,7 +19,7 @@ class CreateMobileConfiguresTable extends Migration
             $table->string('version');
             $table->integer('clients');
             $table->string('apk_url');
-            
+
             $table->timestamps();
             $table->foreign('org_id')->references('id')->on('orgs')->onDelete('cascade');
         });
